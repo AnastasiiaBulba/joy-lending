@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/assets/favicon500-1e504070.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Joy Epic Hero</title>
+    <script type="module" crossorigin src="/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modal-e2520e65.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-0d4ab8a2.js">
+    <link rel="stylesheet" href="/assets/modal-73cc3839.css">
+    <link rel="stylesheet" href="/assets/vendor-0ded8c46.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+  <div class="header-wrapper">
+    <a href="/"
+      ><img
+        width="40"
+        height="40"
+        src="/assets/favicon500-1e504070.png"
+        alt="Logo"
+        class="header-logo"
+    /></a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#onas" class="nav-link">O nas</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#nasze" class="nav-link">Nasze kursy</a>
+        </li>
+        <li class="nav-item">
+          <a href="#treningi" class="nav-link">Treningi i warsztaty</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#historie" class="nav-link">Historie sukcesu</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#cennik" class="nav-link">Cennik</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#kontakt" class="nav-link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="/" class="header-logo-text">Joy Epic Hero</a>
+
+    <button type="button" class="header-burger" data-modal-open>
+      <img
+        width="24"
+        height="24"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVHgB7dWxDYAwDETRI5NQIiZgDEaAyWAEpmAERMkkESmo4tSJJf4rrRS2ctJJAAAA/9WVhtM4L0Hq5ctzXseeD80B3/KbfFrzI4J5EuVXYbdyhIb0C8FZhGKK0G0jBABt0cSV0cTt0MQAXKKJK6OJ26GJAQAAjBda1DYEbTtCawAAAABJRU5ErkJggg=="
+        alt="Burger button"
+        class="header-burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+      <div id="modal" class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <div class="modal-header">
+      <a href="/">
+        <img
+          class="modal-header-logo"
+          src="/assets/favicon500-1e504070.png"
+          alt="Logo image"
+        />
+      </a>
+      <a href="/" class="modal-logo-text">Joy Epic Hero</a>
+      <button type="button" class="back-button is-hidden" data-modal-close>
+        <img
+          width="24"
+          height="24"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGVSURBVHgB7ZjBTcNAEEXHoQaO3BEVIE4pwSWkBDrAdAAVoHRgOoALcOQEvnGAGxxSQcx85ESL5Whnd2ekSJknWetYtvc/r7M7MpHjOI7jOHvO+Vm9uOCNjMnp5yh2Am46I7rj3frk+JQ+v7tHMoCDX1VEN0M/FffzILluFj1j/e9Xg45ImeGezbbLtfza6Ah8/XSveCK8Ox8OzTVHYhy+72n50rWX0uujAgDDaSExFf75vV1QAiIBoC2hER6IBYCWhFZ4kCQASiU0w4NkAZAroR0eZAmAVAmL8CBbAEglrMKDIgEQk7AMDypSgoM23ISrdDNq1cMDNQEwIbHFIjwofoVCJl6nP6zCg3gxl04/PlBV9EFGqI7A+A8boFoAhqgJTM02/OTvyaiK3aAisGuqtKpiQ4oFYvO8tUSRgHSRspTIFkhdYa0ksgRyywMLiWSB0tpGWyJJQKsw05QQC2hXlVoSIgGrklhDQlQL8Ypab/a1C7Ont7bh5jo4JP4mBEQC/KVsyc3KqqoMJFa83ZLjOI7jHAq/oWdlFRAJOWwAAAAASUVORK5CYII="
+          alt="burger-button"
+          class="back-img"
+        />
+      </button>
+    </div>
+
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="#onas" class="modal-nav-link">O nas</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#nasze" class="modal-nav-link">Nasze kursy</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#treningi" class="modal-nav-link">Treningi i warsztaty</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#historie" class="modal-nav-link">Historie sukcesu</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#cennik" class="modal-nav-link">Cennik</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#kontakt" class="modal-nav-link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      <section class="hero">
+  <h1 class="hero-title">Joy Epic Hero</h1>
+
+  <div class="hero-wrap-dop">
+    <div class="hero-image-wrapper">
+      <picture class="hero-image">
+        <source
+          srcset="/assets/hero-desk-1x-b0173706.png 1x, /assets/hero-desk-2x-0c26e43c.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/assets/hero-mob-1x-a29ad5ec.png 1x, /assets/hero-mob-1x-a29ad5ec.png 2x"
+          media="(max-width: 1439px)"
+        />
+        <img src="/assets/hero-mob-1x-a29ad5ec.png" alt="Yoga pose" />
+      </picture>
+
+      <span class="hero-label label-balance">Balance</span>
+      <span class="hero-label label-meditations">Meditations</span>
+      <span class="hero-label label-yoga">Yoga</span>
+      <span class="hero-label label-harmony">Harmony</span>
+    </div>
+
+    <button class="hero-button">Zobacz więcej</button>
+  </div>
+</section>
+
+      <section id="onas" class="onas">
+  <div class="container">
+    <div class="onas-wrap">
+      <h3 class="onas-title">O nas</h3>
+
+      <div class="onas-wrap-content">
+        <div class="onas-wrap-img">
+          <picture class="onas-img">
+            <source
+              srcset="/assets/onas-desk-1x-ba6275d6.png 1x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/assets/onas-mob-1x-5776f4aa.png 1x, /assets/onas-mob-2x-cc69942e.png 2x"
+              media="(max-width: 1439px)"
+            />
+            <img src="/assets/onas-mob-1x-5776f4aa.png" alt="Image o nas" />
+          </picture>
+        </div>
+        <div class="onas-content">
+          <p class="onas-content-text">
+            Joy Epic Hero to platforma, która pomaga ludziom znaleźć równowagę
+            psychiczną i emocjonalną. Naszym celem jest wspieranie osób w
+            rozwoju osobistym, przez medytację, jogę i techniki relaksacyjne.
+            Nasza platforma oferuje szeroki wachlarz kursów i treningów, które
+            pomogą Ci stać się lepszą wersją samego siebie.
+          </p>
+          <p class="onas-content-text">
+            Nasza misja to pomóc Ci w odnalezieniu harmonii, spokoju i pewności
+            siebie poprzez skuteczne i sprawdzone metody rozwoju osobistego.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="nasze" class="nasze">
+  <div class="container">
+    <div class="nasze-wrap">
+      <h3 class="nasze-title">Nasze kursy</h3>
+
+      <div class="nasze-wrap-content">
+        <div class="nasze-text">
+          <h6 class="nasze-text-title">Kurs medytacji dla początkujących</h6>
+          <p class="nasze-text-parag">
+            naucz się podstaw medytacji, aby zrelaksować umysł i ciało
+          </p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+            alt="Image nasze kursy people"
+            class="nasze-text-img"
+          />
+        </div>
+
+        <div class="nasze-text">
+          <h6 class="nasze-text-title">Kurs jogi na co dzień</h6>
+          <p class="nasze-text-parag">
+            codzienne sesje jogi, które pomagają poprawić zdrowie fizyczne i
+            psychiczne
+          </p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+            alt="Image nasze kursy people"
+            class="nasze-text-img"
+          />
+        </div>
+
+        <div class="nasze-text">
+          <h6 class="nasze-text-title">Kurs zarządzania stresem</h6>
+          <p class="nasze-text-parag">
+            techniki i ćwiczenia, które pomogą Ci lepiej radzić sobie w
+            stresujących sytuacjach
+          </p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+            alt="Image nasze kursy people"
+            class="nasze-text-img"
+          />
+        </div>
+
+        <div class="nasze-text">
+          <h6 class="nasze-text-title">Kurs rozwoju osobistego</h6>
+          <p class="nasze-text-parag">
+            zestaw ćwiczeń na poprawę pewności siebie, motywacji i pozytywnego
+            myślenia
+          </p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+            alt="Image nasze kursy people"
+            class="nasze-text-img"
+          />
+        </div>
+
+        <div class="nasze-text">
+          <h6 class="nasze-text-title">Zaawansowana medytacja</h6>
+          <p class="nasze-text-parag">
+            techniki głębokiej medytacji, które pomagają osiągnąć pełną
+            równowagę emocjonalną i psychiczną
+          </p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+            alt="Image nasze kursy people"
+            class="nasze-text-img"
+          />
+        </div>
+      </div>
+
+      <div class="pagination"></div>
+
+      <div class="nasze-wrap-content-desk">
+        <div class="nasze-text-one">
+          <div class="nasze-text-desk">
+            <h6 class="nasze-text-title">Kurs medytacji dla początkujących</h6>
+            <p class="nasze-text-parag">
+              naucz się podstaw medytacji, aby zrelaksować umysł i ciało
+            </p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+              alt="Image nasze kursy people"
+              class="nasze-text-img"
+            />
+          </div>
+
+          <div class="nasze-text-desk">
+            <h6 class="nasze-text-title">Kurs jogi na co dzień</h6>
+            <p class="nasze-text-parag">
+              codzienne sesje jogi, które pomagają poprawić zdrowie fizyczne i
+              psychiczne
+            </p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+              alt="Image nasze kursy people"
+              class="nasze-text-img"
+            />
+          </div>
+
+          <div class="nasze-text-desk">
+            <h6 class="nasze-text-title">Kurs zarządzania stresem</h6>
+            <p class="nasze-text-parag">
+              techniki i ćwiczenia, które pomogą Ci lepiej radzić sobie w
+              stresujących sytuacjach
+            </p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+              alt="Image nasze kursy people"
+              class="nasze-text-img"
+            />
+          </div>
+        </div>
+
+        <div class="nasze-text-two">
+          <div class="nasze-text-desk">
+            <h6 class="nasze-text-title">Kurs rozwoju osobistego</h6>
+            <p class="nasze-text-parag">
+              zestaw ćwiczeń na poprawę pewności siebie, motywacji i pozytywnego
+              myślenia
+            </p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+              alt="Image nasze kursy people"
+              class="nasze-text-img"
+            />
+          </div>
+
+          <div class="nasze-text-desk">
+            <h6 class="nasze-text-title">Zaawansowana medytacja</h6>
+            <p class="nasze-text-parag">
+              techniki głębokiej medytacji, które pomagają osiągnąć pełną
+              równowagę emocjonalną i psychiczną
+            </p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATsSURBVHgBtVjNchpHEO7ZBcfRj00uuQYdEkenoCewfEgUToaSnaqcJD2B8BMInsDoCYROqbJQsC5RIAfJT2BuGHKANzAVpZALtDPunt1ZhmV3YbbkrkK1Ozua/ban++uvh0FCa5y8z6w9WjvknBeAQU4OCmhzwY/zv23WIKExSGCXf3Sy1gPrCgFkI1Yd8DF/lv99cwCGZoGhkWdCwAzw1/bv8JmVshqQwIwBfbX29b4Phjwx4Rs7L57Qb4uuacx7lrt809kHQzMGZDO2p66D20LXGFMH/lzL3gNDMwaEJgOYAbsOi5H8y81rcLcQHSlyYGhJAHkmMvAFLAmgAf0RAFnKtuBDb0yOoxfbYGjGgJBnTr3LDGWSDsqnA88c7pyCoRnz0FWjnxnz8Xs97SmehMAtVATpDg52dp9sgKEZe+hZcWNI2eWnN8jg3Q6CkXMSWKKglumNL5TbpwFDG+BYZfTfaCsJS9+bEXvTD+7BktWyRieb4qk99AZtE/2y3qMBxhN56ULcibdJvGQEiLLITtsnMmaWWZyxmjN2KibAlgbUavQOhSOqIQsMkZOG3nUGr4NbN8QMrPz68sfqEq9ZDlDzvPcahCjpIBzUPZCCWr44+/WtN72cw5yCZVl7OjVYzCr/vPt9ZdG7FgJqnv97BIKX1T1u1/HtzW25eLA1jPs/2l6WZiWMqUMTULGASD7gl56oe874QX7XTA1ennXKCOTIX0OgQnALcKjF8pBlTxfCOHhlCoYMX14mbpq+0HodNz8SkBRXXgxgoNaWDcooUALLi7wh4XbW2QZTQLhV/t6LCV8YjItMCMdfw2b2UdS80BiSVTtt9d0J7PqXFz8kqktBa9a7tGaWrkc3o2/CEiPUQwjGL5SOcN7BPRlm6IW6frCazobNCQXklQR3AhfGIivStEJsgZ1bGhCK8+/UNbdYLN+YGDK9v1bKtn+CRYAos5rn3T6m+L4/eDcjLyRrt+rdj80/u5EdBZUZmvMPkapumoc4Mj+9K9gqSUCUhvRQkqDeACJ/6IXRZW1RonqFX1uMAsQdKNAc3PqyDpwIUeck2VDiO3VgVuu8d4JMOtOJEmcQo+4gf6gxqZ21EsI5q0UCQvkxvYGqrrslUVLvpgs7BazebTByrarQQmpjlAsBap/r5fErdbBh9nf9Q9WvY3QIcceLQRkiSxNVA12fI6qCYOy5wA5BASH193DtYS5lpZ5iPG3P6J8lxXtUMyDFG4i2/tFezXyO73o3R4wUkEg+5RBds/BUgz4O+/u2eh57SkJrORijgaObGUBB3aMZydLTT/9/qoaxK3l0dX214XlyiCy8oebJ+ElBGT3wNAxYUJL4gIJSA+0tBt8FpOE6KMJ0owwNZmdUWZDiDZwcbQ/eFtS4Lkl8QJR6atFldc+crKVtwAyK0zvah/g6Sa+XkocoABUYeaqxAAxtUaveu5rT2Fxu61KlJu9mqZxLW63aKAloNJlk/TWZGEAMEGLf1fWVfmjngV+8sr7ykbgtTvNM50+56NG3jx+7Q+B6aOKM+yqzmBJTnnl9Oz3Lzq4HQywBFWYh34QErOxIBPZqbL4ezpwFaFTix9BfZx9KeDoWKy9nFkQVeXszeqWC1+s2SlHZFL/YlGhn0l4GWqB9USa9gec9gvTRHbY/Mc2fIjpwPRp3ijZATx3r8vgzOiHS7uOaqAEAAAAASUVORK5CYII="
+              alt="Image nasze kursy people"
+              class="nasze-text-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="treningi" class="treningi">
+  <div class="container">
+    <div class="treningi-wrap">
+      <h3 class="treningi-title">Treningi i warsztaty</h3>
+
+      <div class="treningi-wrap-content">
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty medytacyjne</h6>
+          <p class="treningi-text-parag">
+            warsztaty, które pomagają w pełni odprężyć umysł i ciało. Nauka
+            technik medytacyjnych oraz pracy z oddechem
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Treningi jogi</h6>
+          <p class="treningi-text-parag">
+            specjalistyczne zajęcia, które poprawiają elastyczność, równowagę i
+            siłę ciała
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty rozwoju osobistego</h6>
+          <p class="treningi-text-parag">
+            jak pracować nad swoją pewnością siebie, motywacją oraz
+            odnalezieniem celów życiowych
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty pracy z emocjami</h6>
+          <p class="treningi-text-parag">
+            zestaw ćwiczeń na poprawę pewności siebie, motywacji i pozytywnego
+            jak zarządzać emocjami i zwiększyć swoją samoświadomość.
+          </p>
+        </div>
+      </div>
+
+      <div class="treningi-pagination"></div>
+
+      <div class="treningi-wrap-content-desk">
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty medytacyjne</h6>
+          <p class="treningi-text-parag">
+            warsztaty, które pomagają w pełni odprężyć umysł i ciało. Nauka
+            technik medytacyjnych oraz pracy z oddechem
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Treningi jogi</h6>
+          <p class="treningi-text-parag">
+            specjalistyczne zajęcia, które poprawiają elastyczność, równowagę i
+            siłę ciała
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty rozwoju osobistego</h6>
+          <p class="treningi-text-parag">
+            jak pracować nad swoją pewnością siebie, motywacją oraz
+            odnalezieniem celów życiowych
+          </p>
+        </div>
+
+        <div class="treningi-text">
+          <h6 class="treningi-text-title">Warsztaty pracy z emocjami</h6>
+          <p class="treningi-text-parag">
+            jak zarządzać emocjami i zwiększyć swoją samoświadomość.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="historie" class="historie">
+  <div class="container">
+    <div class="historie-wrap">
+      <h3 class="historie-title">Historie sukcesu</h3>
+
+      <div class="historie-slider-container">
+        <div class="historie-wrap-content">
+          <div class="historie-card">
+            <div class="historie-card-wrap-img">
+              <img
+                class="historie-card-img"
+                src="data:image/png;base64,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"
+                alt="Historie image"
+              />
+            </div>
+            <div class="historie-card-title-wrap">
+              <h6 class="historie-card-title">Anna K.</h6>
+              <p class="historie-card-text">
+                Dzięki kursowi medytacji znalazłam wewnętrzny spokój i
+                równowagę, co zmieniło moje życie zawodowe i osobiste.
+              </p>
+            </div>
+          </div>
+
+          <div class="historie-card">
+            <div class="historie-card-wrap-img">
+              <img
+                class="historie-card-img"
+                src="data:image/png;base64,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"
+                alt="Historie image"
+              />
+            </div>
+            <div class="historie-card-title-wrap">
+              <h6 class="historie-card-title">Marcin W.</h6>
+              <p class="historie-card-text">
+                Joga w moim życiu to teraz codzienność! Dzięki warsztatom
+                zmniejszyłem poziom stresu i poprawiłem swoją kondycję fizyczną.
+              </p>
+            </div>
+          </div>
+
+          <div class="historie-card">
+            <div class="historie-card-wrap-img">
+              <img
+                class="historie-card-img"
+                src="data:image/png;base64,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"
+                alt="Historie image"
+              />
+            </div>
+            <div class="historie-card-title-wrap">
+              <h6 class="historie-card-title">Katarzyna S.</h6>
+              <p class="historie-card-text">
+                Warsztaty rozwoju osobistego pomogły mi odnaleźć sens w życiu i
+                lepiej radzić sobie z trudnymi sytuacjami.
+              </p>
+            </div>
+          </div>
+
+          <div class="historie-card">
+            <div class="historie-card-wrap-img">
+              <img
+                class="historie-card-img"
+                src="data:image/png;base64,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"
+                alt="Historie image"
+              />
+            </div>
+            <div class="historie-card-title-wrap">
+              <h6 class="historie-card-title">Piotr L.</h6>
+              <p class="historie-card-text">
+                Dzięki technikom rozwoju osobistego stałem się bardziej pewny
+                siebie i motywowany do działania. Zdecydowanie polecam!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="historie-controls">
+          <div class="progress-line"></div>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="cennik" class="cennik">
+  <div class="container">
+    <div class="cennik-wrap">
+      <h3 class="cennik-title">Cennik</h3>
+
+      <div class="cennik-wrap-content">
+        <div class="cennik-text">
+          <p class="cennik-text-parag">Kurs medytacji dla początkujących</p>
+          <div class="cennik-text-litle">
+            <p class="pln">200 PLN</p>
+            <p class="za">za 4 tygodnie</p>
+          </div>
+        </div>
+
+        <div class="cennik-text">
+          <p class="cennik-text-parag">Kurs jogi na co dzień</p>
+          <div class="cennik-text-litle">
+            <p class="pln">250 PLN</p>
+            <p class="za">za 6 tygodni</p>
+          </div>
+        </div>
+
+        <div class="cennik-text">
+          <p class="cennik-text-parag">Kurs zarządzania stresem</p>
+          <div class="cennik-text-litle">
+            <p class="pln">180 PLN</p>
+            <p class="za">za 4 tygodnie</p>
+          </div>
+        </div>
+
+        <div class="cennik-text">
+          <p class="cennik-text-parag">Kurs rozwoju osobistego</p>
+          <div class="cennik-text-litle">
+            <p class="pln">300 PLN</p>
+            <p class="za">za 8 tygodni</p>
+          </div>
+        </div>
+
+        <div class="cennik-text">
+          <p class="cennik-text-parag">Warsztaty rozwoju osobistego</p>
+          <div class="cennik-text-litle">
+            <p class="pln">150 PLN</p>
+            <p class="za">za sesję</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cennik-pagination"></div>
+
+      <div class="cennik-wrap-content-desk">
+        <div class="cennik-text-one">
+          <div class="cennik-text-desk">
+            <p class="cennik-text-parag">Kurs medytacji dla początkujących</p>
+            <div class="cennik-text-litle">
+              <p class="pln">200 PLN</p>
+              <p class="za">za 4 tygodnie</p>
+            </div>
+          </div>
+
+          <div class="cennik-text-desk">
+            <p class="cennik-text-parag">Kurs jogi na co dzień</p>
+            <div class="cennik-text-litle">
+              <p class="pln">250 PLN</p>
+              <p class="za">za 6 tygodni</p>
+            </div>
+          </div>
+
+          <div class="cennik-text-desk">
+            <p class="cennik-text-parag">Kurs zarządzania stresem</p>
+            <div class="cennik-text-litle">
+              <p class="pln">180 PLN</p>
+              <p class="za">za 4 tygodnie</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cennik-text-two">
+          <div class="cennik-text-desk">
+            <p class="cennik-text-parag">Kurs rozwoju osobistego</p>
+            <div class="cennik-text-litle">
+              <p class="pln">300 PLN</p>
+              <p class="za">za 8 tygodni</p>
+            </div>
+          </div>
+
+          <div class="cennik-text-desk">
+            <p class="cennik-text-parag">Warsztaty rozwoju osobistego</p>
+            <div class="cennik-text-litle">
+              <p class="pln">150 PLN</p>
+              <p class="za">za sesję</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="kontakt" class="kontakt">
+  <div class="container">
+    <div class="kontakt-wrap">
+      <h3 class="kontakt-title">Kontakt</h3>
+
+      <p class="kontakt-text">
+        Masz pytania lub chcesz dowiedzieć się więcej? Skontaktuj się z nami.
+      </p>
+      <p class="kontakt-text-mail">
+        E-mail:
+        <a class="kontakt-mail" href="mailto:kontakt@joyepichero.com"
+          >kontakt@joyepichero.com</a
+        >
+      </p>
+    </div>
+  </div>
+</section>
+
+      <div id="modal-cookies" class="backdrop" data-backdrop>
+  <div class="modal-cookies">
+    <div class="modal-cookies-text-wrap">
+      <p class="modal-cookies-text">
+        We use cookies to improve your experience on our website.
+      </p>
+      <p class="modal-cookies-text">
+        By browsing this website, you agree to our use of cookies
+      </p>
+      <a href="./cookies.html" class="modal-cookies-link">Learn more</a>
+    </div>
+    <div class="modal-cookies-dop-btn">
+      <button type="button" class="modal-cookies-decline">
+        Decline Cookies
+      </button>
+      <button type="button" class="modal-cookies-accept">Accept Cookies</button>
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+  <div class="footer-wrap">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="./polityka-prywatności.html" class="footer-nav-link"
+          >Polityka Prywatności</a
+        >
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./warunki.html" class="footer-nav-link"
+          >Warunki i postanowienia</a
+        >
+      </li>
+
+      <li class="footer-nav-item">
+        <a href="./cookie.html" class="footer-nav-link"
+          >Polityka plików cookie</a
+        >
+      </li>
+    </ul>
+
+    <div class="footer-text-wrap">
+      <p class="footer-text">© 2025 joyepichero.com,&nbsp;</p>
+      <p class="footer-text">Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    
+    
+    
+    
+    
+  </body>
+</html>
