@@ -1,0 +1,89 @@
+@import './common/vars';
+
+.is-hidden {
+  background: none;
+  display: none;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: rgba($_voilet, 0.4);
+  width: 375px;
+  height: 310px;
+  display: flex;
+  text-align: center;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  z-index: 1000;
+}
+
+.modal-header-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 48px;
+}
+
+.back-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  position: absolute;
+  top: 16px;
+  right: 22px;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 12px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-top: 30px;
+}
+
+.modal-nav-link {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+  text-align: right;
+}
+
+.footer-modal-nav-link {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+}

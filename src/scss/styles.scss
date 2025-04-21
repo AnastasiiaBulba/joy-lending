@@ -1,0 +1,53 @@
+@import './modal.scss';
+@import './modal-cookies.scss';
+@import './onas.scss';
+@import './nasze.scss';
+@import './footer.scss';
+@import './treningi.scss';
+@import './historie.scss';
+@import './hero.scss';
+@import './cennik.scss';
+@import './kontakt.scss';
+@import './header.scss';
+
+@import './common/reset';
+@import './common/mixins';
+@import './common/breakpoints';
+@import './common/vars';
+
+:root {
+  font-family: 'Cormorant Garamond', sans-serif;
+  color: $_black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: rgba($_back, 0.1);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-bottom: 120px;
+  }
+}

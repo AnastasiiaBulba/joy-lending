@@ -1,0 +1,121 @@
+@import './common/vars';
+
+.is-hidden {
+  display: none;
+}
+
+.modal-cookies {
+  width: 375px;
+  height: 158px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0;
+  padding-left: 16px;
+  border-radius: 16px;
+}
+
+.modal-cookies-text-wrap {
+  width: 199px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-cookies-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 199px;
+  text-align: left;
+  color: $_black;
+}
+
+.modal-cookies-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: $_back;
+  cursor: pointer;
+}
+
+.modal-cookies-dop-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+  gap: 16px;
+}
+
+.modal-cookies-accept,
+.modal-cookies-decline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  all: unset;
+  cursor: pointer;
+
+  border: 1px solid $_orange-dark;
+  border-radius: 14px;
+  width: 128px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s, color 0.5s;
+  position: relative;
+}
+
+.modal-cookies-accept:hover,
+.modal-cookies-decline:hover {
+  background-color: $_orange-dark;
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-cookies {
+    width: 1440px;
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .modal-cookies-text {
+    width: 511px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .modal-cookies-link {
+    font-size: 18px;
+  }
+
+  .modal-cookies-dop-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .modal-cookies-accept {
+    margin-top: 35px;
+    font-size: 18px;
+    width: 176px;
+    height: 51px;
+  }
+
+  .modal-cookies-decline {
+    margin-top: 35px;
+    font-size: 18px;
+    width: 176px;
+    height: 51px;
+  }
+}
