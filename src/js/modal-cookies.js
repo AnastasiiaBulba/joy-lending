@@ -1,3 +1,5 @@
+//
+
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('#modal-cookies');
   const acceptBtn = document.querySelector('.modal-cookies-accept');
